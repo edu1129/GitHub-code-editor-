@@ -136,7 +136,7 @@ const App: React.FC = () => {
     try {
         const modelNameMap: Record<ModelOption, string> = {
             flash: 'gemini-2.5-flash-preview-04-17',
-            pro: 'gemini-2.5-flash-preview-04-17', // NOTE: Using flash for "pro" as a placeholder per guidelines
+            pro: 'gemini-2.5-pro', // NOTE: Using flash for "pro" as a placeholder per guidelines
         };
         const actualModelName = modelNameMap[selectedModel];
         const stream = getModificationJsonStream(files, selectedFileNames, modificationRequest, actualModelName);
