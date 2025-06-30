@@ -1,0 +1,6 @@
+{
+  "name": "Copy of GitHub Copy of Copy of Copy of Copy of AI Code Modifier",
+  "description": "An intelligent tool that modifies code based on user instructions by generating and applying a JSON-based change plan using the Gemini API. It supports undo functionality and provides a clear side-by-side comparison.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

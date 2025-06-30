@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Modifier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <style>
+      /* Override hljs background to match our theme and style the caret */
+      .hljs {
+        background: transparent !important;
+        color: #e6e9ec; /* bunker-100 */
+      }
+      .transparent-caret-textarea {
+          caret-color: white;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'bunker': {
+                '50': '#f5f6f7',
+                '100': '#e6e9ec',
+                '200': '#cbd3da',
+                '300': '#a5b3c1',
+                '400': '#7b8e9f',
+                '500': '#617589',
+                '600': '#4d5e70',
+                '700': '#3f4b5a',
+                '800': '#36404d',
+                '900': '#303841',
+                '950': '#1c2229',
+              },
+              green: {
+                '300': '#86efac',
+                '500': '#22c55e',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "highlight.js": "https://esm.sh/highlight.js@11.9.0",
+    "highlight.js/": "https://esm.sh/highlight.js@11.9.0/",
+    "jszip": "https://esm.sh/jszip@3.10.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-bunker-950">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
